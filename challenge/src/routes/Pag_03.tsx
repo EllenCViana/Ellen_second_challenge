@@ -8,6 +8,24 @@ import Img_logout from "./imagens/logout.svg"
 
 function Pag_03() {
 
+  function showTime() {
+    var time:any = new Date();
+    var hour:any = time.getHours();
+    var minute:any = time.getMinutes();
+
+    if(hour<10) hour = "0"+ hour;
+    if(minute < 10) minute = "0"+ minute;
+    var tempo = hour+":"+minute;
+
+    document.getElementById("timer")!.innerHTML=tempo;
+  }
+  function initTime(){
+    setInterval(showTime, 1000);
+  }
+  initTime()
+
+
+
   let nome_planejador:any= localStorage.getItem("home")
     nome_planejador=JSON.parse(nome_planejador);
     const home = nome_planejador;
@@ -20,7 +38,12 @@ function Pag_03() {
 
   return (
     <main id="pag_03">
+
         <section id="menu_03">
+        <div id="relogio" onLoad={initTime}>
+        <span id="timer"></span>
+
+      </div>
           <div id="title">
             <h1>{home.firstname} {home.lastname}</h1>
             <h2>Use this planner to organize your daily issues.</h2>
@@ -30,7 +53,7 @@ function Pag_03() {
         <button onClick={sair} id="botao_logout"><img src={Img_logout} id="img_logout" alt=""/>Logout</button>
         <section id="addtask">
           <section>
-            <input type="text"  id="taskorissue" placeholder="Task or issue"></input>
+            <input type="text"  id="taskorissue" placeholder="Task or issue" maxLength={100}></input>
           </section>
           <section>
             <select id="diadasemana" name="diadasemana">
@@ -146,6 +169,26 @@ function Pag_03() {
           <section className="tarefas">
             <div id="h">
               <p>18h15m</p>
+            </div>
+            <div className="tasks">
+              <div id="cor"></div>
+              <div id="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+              <button>Delete</button>
+            </div>
+          </section>
+          <section className="tarefas">
+            <div id="h">
+              <p>19h40m</p>
+            </div>
+            <div className="tasks">
+              <div id="cor"></div>
+              <div id="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+              <button>Delete</button>
+            </div>
+          </section>
+          <section className="tarefas">
+            <div id="h">
+              <p>12h15m</p>
             </div>
             <div className="tasks">
               <div id="cor"></div>
