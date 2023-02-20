@@ -7,6 +7,13 @@ import Img_uol from "./imagens/Type=Colored positive 1.svg";
 import Img_logout from "./imagens/logout.svg"
 
 function Pag_03() {
+  const data = new Date()
+  const dia = String(data.getDate()).padStart(2, '0')
+  const mes = String(data.getMonth() + 1).padStart(2, '0')
+  
+  const ano = data.getFullYear()
+  const dataAtual = `${dia}/${mes}/${ano}`
+  console.log(dataAtual)
 
   function showTime() {
     var time:any = new Date();
@@ -42,6 +49,8 @@ function Pag_03() {
         <section id="menu_03">
         <div id="relogio" onLoad={initTime}>
         <span id="timer"></span>
+        <br/>
+        <span id="data">{dataAtual}</span>
 
       </div>
           <div id="title">

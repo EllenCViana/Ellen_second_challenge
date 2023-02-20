@@ -329,4 +329,18 @@
     font-weight: 900;
     font-size: 40px;
     line-height: 20px;
+    color: #3B3E45;
+    /* background-color: #00BA88; */
+}
+#data {
+    position: absolute;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #3B3E45;
+    top: 41px;
+
+    
 }
