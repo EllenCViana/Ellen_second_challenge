@@ -7,16 +7,27 @@ import Img_uol from "./imagens/Type=Colored positive 1.svg";
 import Img_logout from "./imagens/logout.svg"
 
 function Pag_03() {
+
+  let nome_planejador:any= localStorage.getItem("home")
+    nome_planejador=JSON.parse(nome_planejador);
+    const home = nome_planejador;
+
+    function sair(){
+        localStorage.setItem("privado","false")
+        window.location.href = "/";
+        
+    }
+
   return (
     <main id="pag_03">
         <section id="menu_03">
           <div id="title">
-            <h1>Weekly Planner</h1>
+            <h1>{home.firstname} {home.lastname}</h1>
             <h2>Use this planner to organize your daily issues.</h2>
           </div>
         </section>
         <img src={Img_uol} id="logouol2" alt="" />
-        <button id="botao_logout"><img src={Img_logout} id="img_logout" alt=""/>Logout</button>
+        <button onClick={sair} id="botao_logout"><img src={Img_logout} id="img_logout" alt=""/>Logout</button>
         <section id="addtask">
           <section>
             <input type="text"  id="taskorissue" placeholder="Task or issue"></input>
