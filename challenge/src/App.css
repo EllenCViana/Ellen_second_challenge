@@ -25,16 +25,7 @@ p {
   display: flex;
   justify-content: center;
 }
-#uol {
-  position: relative;
-  z-index: 1;
-  margin-top: 36px;
-  width: 484px;
-  height: 66px;
-}
-#pc {
-  position: absolute;
-}
+
 .lado_1_01 h1 {
   font-size: 60px;
   margin: 197px 0 18px 287px;
@@ -70,6 +61,7 @@ p {
 .lado_1_01 a {
   margin: 0 0 100px 510px;
 }
+
 #login_01 {
   font-size: 30px;
   margin: 0 0 0 285px;
@@ -89,6 +81,10 @@ p {
 #senha_01 {
   width: 20px;
   height: 25.1px;
+  position: absolute;
+  top: 17px;
+  right: -59px;
+  transition: 0.3s;
 }
 .lado_1_01 section {
   display: flex;
@@ -109,16 +105,11 @@ p {
 .inputpassword input:valid ~ label {
   transform: translateX(-59px);
 }
+
 #user_01 {
   position: absolute;
   top: 18px;
   right: -59px;
   z-index: 1;
   transition: 0.5s;
-}
-#senha_01 {
-  position: absolute;
-  top: 17px;
-  right: -59px;
-  transition: 0.3s;
 }

@@ -1,0 +1,10 @@
+.pc {
+  position: absolute;
+}
+.uol {
+  position: relative;
+  z-index: 1;
+  margin-top: 36px;
+  width: 484px;
+  height: 66px;
+}

@@ -1,8 +1,7 @@
 import "./App.css";
 import Img_user from "./imagens/icon-user.svg";
 import Img_password from "./imagens/icon-password.svg";
-import Img_pc from "./imagens/image2.svg";
-import Img_uol from "./imagens/Type=Colored negative.svg";
+import ImagemNotebook from "./components/backgroundImage/ImagemNotebook";
 import {useNavigate} from 'react-router-dom';
 
 function App() {
@@ -11,8 +10,6 @@ function App() {
   let login_password:any
   let controle_nome_password:any
   let controle:any
-  
-
 
   const navigate = useNavigate();
   const onsubmitlogin = (e:any) =>{
@@ -90,10 +87,7 @@ function App() {
       </section>
 
       <section className="lado_2_01">
-        <a href="https://compass.uol" target="_blank" id="uol" rel="noreferrer">
-          <img src={Img_uol} alt="" />
-        </a>
-        <img src={Img_pc} id="pc" alt="" />
+        <ImagemNotebook />
       </section>
     </main>
   );

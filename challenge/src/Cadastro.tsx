@@ -1,70 +1,59 @@
-import "./Pag_02.css";
-import Img_pc from "./imagens/image2.svg";
-import Img_uol from "./imagens/Type=Colored negative.svg";
-import {useNavigate} from 'react-router-dom'
+import "./Cadastro.css";
+import ImgNote from "./components/backgroundImage/ImagemNotebook";
+import { useNavigate } from "react-router-dom";
 
 function Pag_02() {
   const navigate = useNavigate();
-  let nome:any;
-  let sobrenome:any;
-  let data:any;
-  let country:any;
-  let city:any
-  let email:any;
-  let password:any;
-  let usuario:object;
-  
-  let nome_password:any;
-  let email_password:any;
-  let nome_email_password:any;
-  let converter:any;
-  
+  let nome: any;
+  let sobrenome: any;
+  let data: any;
+  let country: any;
+  let city: any;
+  let email: any;
+  let password: any;
+  let usuario: object;
+  let nome_password: any;
+  let email_password: any;
+  let nome_email_password: any;
+  let converter: any;
 
-  const onsubmit = (e:any) => {
+  const onsubmit = (e: any) => {
     e.preventDefault();
 
-
-    
-    nome = e.target.elements.firstname.value
-    sobrenome = e.target.elements.lastname.value
-    data = e.target.elements.data.value
-    country = e.target.elements.country.value
-    city = e.target.elements.city.value
-    email = e.target.elements.email.value
-    password = e.target.elements.password.value
+    nome = e.target.elements.firstname.value;
+    sobrenome = e.target.elements.lastname.value;
+    data = e.target.elements.data.value;
+    country = e.target.elements.country.value;
+    city = e.target.elements.city.value;
+    email = e.target.elements.email.value;
+    password = e.target.elements.password.value;
 
     usuario = {
-        firstname: nome,
-        lastname: sobrenome,
-        data: data,
-        country: country,
-        city: city,
-        email: email,
-        password: password,
-      }
-    
-      nome =`${nome}${sobrenome}`
-      nome_password = `${nome}_${password}`
-      email_password = `${email}_${password}`
-      nome_email_password = `${nome}_${email}_${password}`
-      converter=JSON.stringify(usuario)
-      localStorage.setItem(nome_password,nome_email_password);
-      localStorage.setItem(email_password,nome_email_password);
-      localStorage.setItem(nome_email_password,converter);
+      firstname: nome,
+      lastname: sobrenome,
+      data: data,
+      country: country,
+      city: city,
+      email: email,
+      password: password,
+    };
 
-      function navegar_login (){
-        navigate("/")
-      }
+    nome = `${nome}${sobrenome}`;
+    nome_password = `${nome}_${password}`;
+    email_password = `${email}_${password}`;
+    nome_email_password = `${nome}_${email}_${password}`;
+    converter = JSON.stringify(usuario);
+    localStorage.setItem(nome_password, nome_email_password);
+    localStorage.setItem(email_password, nome_email_password);
+    localStorage.setItem(nome_email_password, converter);
 
-      navegar_login();
-  }
+    function navegar_login() {
+      navigate("/");
+    }
 
-  
-  
-  
-  
-  
-  
+    navegar_login();
+  };
+
   return (
     <main id="pag02">
       <section id="lado_1_02">
@@ -102,12 +91,7 @@ function Pag_02() {
             <div>
               <label htmlFor="birthdate">birth date</label>
             </div>
-            <input
-              name="data"
-              type="date"
-              id="birthdate"
-              required
-            ></input>
+            <input name="data" type="date" id="birthdate" required></input>
           </section>
 
           <section className=" section_label">
@@ -189,10 +173,7 @@ function Pag_02() {
       </section>
 
       <section id="lado_2_02">
-        <a href="https://compass.uol" target="_blank" id="uol" rel="noreferrer">
-          <img src={Img_uol} alt="" />
-        </a>
-        <img src={Img_pc} id="pc" alt="" />
+        <ImgNote />
       </section>
     </main>
   );

@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 
-import Login from "./routes/App"
-import Cadastro from "./routes/Pag_02"
-import Home from "./routes/Pag_03"
+import Login from "./App"
+import Cadastro from "./Cadastro"
+import Home from "./Home"
 import Privado from './routes/privado'
 
 const router = createBrowserRouter ([

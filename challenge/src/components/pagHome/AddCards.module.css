@@ -1,0 +1,73 @@
+.addtask {
+    display: flex;
+    margin-top: 35px;
+}
+
+.taskorissue {
+    padding-left: 15px;
+    font-size: 14px;
+    width: 391px;
+    height: 41px;
+    background: #FFFFFF;
+    border: 1px solid #FECE00;
+    border-radius: 10px;
+    margin: 0 3px 0 24px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.diadasemana {
+    padding-left: 8px;
+    font-size: 14px;
+    width: 240px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 1px solid #FECE00;
+    border-radius: 10px;
+    margin: 0 3px 0 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.intervalo {
+    font-size: 22px;
+    width: 120px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 1px solid #FECE00;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.addcalendar {
+    display: flex;
+    justify-content: center;
+    border: none;
+    background: #00BA88;
+    color: #FFFFFF;
+    border-radius: 10px;
+    width: 200px;
+    height: 44px;
+    align-items: center;
+    margin-left: 692px;
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.delete {
+    display: flex;
+    justify-content: center;
+    border: none;
+    font-family: 'Mulish';   
+    width: 200px;
+    height: 44px;
+    background: #FF3D1F;
+    color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin: 0 23px 0 24px;
+    font-weight: 700;
+    line-height: 20px;
+}
