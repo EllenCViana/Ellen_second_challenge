@@ -5,7 +5,6 @@ import ImagemNotebook from "./components/backgroundImage/ImagemNotebook";
 import {useNavigate} from 'react-router-dom';
 
 function App() {
-
   let nome_email_login:any;
   let login_password:any
   let controle_nome_password:any
@@ -42,6 +41,7 @@ function App() {
 
   return (
     <main className="pag01">
+
       <section className="lado_1_01">
         <form onSubmit={onsubmitlogin}>
           <h1>Welcome,</h1>

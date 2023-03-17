@@ -1,17 +1,24 @@
 .semana {
     display: flex;
+    gap: 3px;
+    margin: 19px 0 6px;
 }
-.monday,.tuesday,.wednesday,.thursday,.friday,.saturday,.sunday {
+.tuesday,.wednesday,.thursday,.friday,.saturday,.sunday {
     padding-left: 6px;
-    margin: 19px 3px 0;
     font-size: 20px;
-    width: 240px;
+    width: 234px;
     height: 33px;
     box-shadow: 0px 4px 24px rgba(168, 168, 168, 0.25);
     border-radius: 9px 9px 0px 0px;
 }
 .monday {
+    width: 284px;
+    padding-left: 6px;
+    font-size: 20px;
     margin-left: 125px;
+    height: 33px;
+    box-shadow: 0px 4px 24px rgba(168, 168, 168, 0.25);
+    border-radius: 9px 9px 0px 0px;
     background: #FF3D1F;
 }
 .tuesday {
