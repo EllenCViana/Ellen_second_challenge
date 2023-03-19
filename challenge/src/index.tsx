@@ -2,11 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
-
-import Login from "./App"
-import Cadastro from "./Cadastro"
-import Home from "./Home"
-import Privado from './routes/privado'
+import Login from "./App";
+import Cadastro from "./Cadastro";
+import Home from "./Home";
+import Privado from './routes/privado';
 
 const router = createBrowserRouter ([
   {
@@ -32,4 +31,6 @@ root.render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+
+
 
