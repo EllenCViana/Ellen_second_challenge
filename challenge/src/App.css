@@ -5,6 +5,7 @@ h2,
 p {
   margin: 0;
 }
+
 .pag01 {
   margin: 0;
   color: #e0e0e0;
@@ -13,12 +14,14 @@ p {
   background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
   display: flex;
 }
+
 .lado_1_01 {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 400;
   width: 50%;
 }
+
 .lado_2_01 {
   width: 50%;
   position: relative;
@@ -30,22 +33,27 @@ p {
   font-size: 60px;
   margin: 197px 0 18px 287px;
 }
+
 .lado_1_01 p {
   font-size: 16px;
   margin: 0 0 135px 287px;
   max-width: 300px;
 }
+
 .lado_1_01 h2 {
   margin: 0 0 32px 287px;
 }
+
 .lado_1_01 form {
   display: flex;
   flex-direction: column;
   outline: none;
 }
+
 .lado_1_01 input {
   color: #ffffff;
 }
+
 .lado_1_01 .form {
   position: relative;
   margin-bottom: 33px;
@@ -55,9 +63,11 @@ p {
   border: 1px solid #ffffff;
   border-radius: 50px;
 }
+
 #password_01 {
   margin: 0 0 115px 0;
 }
+
 .lado_1_01 a {
   margin: 0 0 100px 510px;
 }
@@ -74,10 +84,12 @@ p {
   box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
+
 #createaccount_01 {
   margin: 6px 0 0 300px;
   color: #ffffff;
 }
+
 #senha_01 {
   width: 20px;
   height: 25.1px;
@@ -86,19 +98,23 @@ p {
   right: -59px;
   transition: 0.3s;
 }
+
 .lado_1_01 section {
   display: flex;
 }
+
 .inputuser,
 .inputpassword {
   width: 379px;
   position: relative;
   margin-left: 285px;
 }
+
 .inputuser input:focus,
 .inputpassword input:focus {
   outline: none;
 }
+
 .inputuser input:focus ~ label,
 .inputpassword input:focus ~ label,
 .inputuser input:valid ~ label,

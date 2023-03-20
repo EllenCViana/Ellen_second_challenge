@@ -6,7 +6,12 @@ function ImagemNotebook() {
   return (
     <>
       <img src={Imagem_Notebook} className={styles.pc} alt="" />
-      <a href="https://compass.uol" target="_blank" className={styles.uol} rel="noreferrer">
+      <a
+        href="https://compass.uol"
+        target="_blank"
+        className={styles.uol}
+        rel="noreferrer"
+      >
         <img src={Img_uol} alt="" />
       </a>
     </>

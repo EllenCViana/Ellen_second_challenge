@@ -5,6 +5,7 @@ h2,
 p {
   margin: 0;
 }
+
 #pag02 {
   margin: 0;
   color: #e0e0e0;
@@ -13,21 +14,25 @@ p {
   background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
   display: flex;
 }
+
 #lado_1_02 {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 400;
   width: 50%;
 }
+
 #lado_2_02 {
   width: 50%;
   position: relative;
   display: flex;
   justify-content: center;
 }
+
 #lado_1_02 form {
   margin-left: 296px;
 }
+
 #lado_1_02 h1 {
   font-style: normal;
   font-weight: 400;
@@ -35,6 +40,7 @@ p {
   line-height: 75px;
   margin: 94px 0 6px 0;
 }
+
 #lado_1_02 p {
   font-style: normal;
   font-weight: 400;
@@ -42,18 +48,21 @@ p {
   line-height: 20px;
   margin: 0 0 67px 0;
 }
+
 #lado_1_02 label {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
+
 .section_label {
   display: flex;
   align-items: center;
   height: 60px;
   margin-bottom: 18px;
 }
+
 .section_label div {
   width: 75px;
   box-sizing: border-box;
@@ -61,10 +70,12 @@ p {
   display: flex;
   align-items: center;
 }
+
 #lado_1_02 input {
   outline: none;
   color: #ffffff;
 }
+
 #lado_1_02 input {
   padding-left: 25px;
   width: 379px;
@@ -76,27 +87,58 @@ p {
   border: 1px solid #ffffff;
   border-radius: 50px;
 }
+
 #lado_1_02 #birthdate {
   color: #E0E0E0;
 }
+
 input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
 }
+
 #registernow {
   font-size: 32px;
   width: 471px;
   height: 67px;
   color: #ffffff;
   border-radius: 50px;
-  background: linear-gradient(90deg, #ff2d04 0%, #c13216 100%);
+  background: linear-gradient(90deg, #c13216 0%, #c13216 100%);
   box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   margin-bottom: 5px;
 }
+
 .ultimasection {
   margin: 0;
   margin-bottom: 56px;
 }
+
 #createaccount_00 {
   color: #ffffff;
+}
+
+.success-message {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.mensagemdeerro {
+  z-index: 1;
+  color: #ffffff;
+  position: absolute;
+  top: 90px;
+  left: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  width: 439px;
+  height: 78px;
+  font-size: 24px;
+  text-align: center;  
+  border: 2px solid rgb(255, 251, 9);  
+  border-radius: 50px;
 }

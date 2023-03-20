@@ -18,15 +18,23 @@ function Header() {
         </div>
         <DateTime />
       </section>
-
-      <a href="https://compass.uol" target="_blank" className={styles.logouol2} rel="noreferrer">
-        <img src={Img_uol}  alt="" />
+      {/* Ir para pagina Compass.uol */}
+      <a
+        href="https://compass.uol"
+        target="_blank"
+        className={styles.logouol2}
+        rel="noreferrer"
+      >
+        <img src={Img_uol} alt="" />
       </a>
-      
+      {/* Ir para pagina Compass.uol */}
+
+      {/* Botão Logout */}
       <button onClick={sair} className={styles.botao_logout}>
         <img src={Img_logout} className={styles.Img_logout} alt="" />
         Logout
       </button>
+      {/* Botão Logout */}
     </>
   );
 }

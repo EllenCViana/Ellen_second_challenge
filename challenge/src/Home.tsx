@@ -8,10 +8,9 @@ function Pag_03() {
   return (
     <main id="pag_03">
       <Header />
-      <AddCards />    
-      <ImagemLogoUOL />     
+      <AddCards />
+      <ImagemLogoUOL />
     </main>
   );
 }
-
 export default Pag_03;

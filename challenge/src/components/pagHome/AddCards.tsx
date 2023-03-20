@@ -7,7 +7,6 @@ import DiasdaSemana from "./DiasdaSemana";
 interface AddCardsProps {}
 
 function AddCards(props: AddCardsProps) {
-
   //barra de rolagem quadro
   const referenteAScrollbar = useRef<HTMLDivElement>(null);
   const interligandoscrollbar = () => {
@@ -26,21 +25,19 @@ function AddCards(props: AddCardsProps) {
   //guarda os valores dos inputs - submiçao
   const [tasks, setTasks] = useState<any[]>([]);
 
-  function submitForm(e:any) {
+  function submitForm(e: any) {
     e.preventDefault();
     const form = e.currentTarget;
 
     //inputs e seus valores
-    const conteudo= e.target.elements.conteudo.value
-    const dia_semana= e.target.elements.diadasemana.value
-    const hora= e.target.elements.hora.value
+    const conteudo = e.target.elements.conteudo.value;
+    const dia_semana = e.target.elements.diadasemana.value;
+    const hora = e.target.elements.hora.value;
     //inputs e seus valores
 
     setTasks([...tasks, { hora, conteudo, dia_semana }]);
 
     form.reset();
-
-
   }
   //guarda os valores dos inputs
 
@@ -94,11 +91,9 @@ function AddCards(props: AddCardsProps) {
           <img src={Img_mais} alt="" />
           <p>Add to calendar</p>
         </button>
-        
+
         {/* Button delete all */}
-        <button className={styles.delete} 
-        onClick={limpar}
-        type="button">
+        <button className={styles.delete} onClick={limpar} type="button">
           <img src={Img_menos} alt="" />
           <p>Delete All</p>
         </button>
@@ -130,7 +125,7 @@ function AddCards(props: AddCardsProps) {
               <div className={styles.h}>{task.hora}</div>
             ))}
           </div>
-          
+
           {/* segundo quadro */}
           <div className={styles.girar}>
             <div
@@ -148,7 +143,7 @@ function AddCards(props: AddCardsProps) {
                   transform: "rotate3d(1,0,0,180deg)",
                 }}
               >
-                {tasks.map((task,index) => (
+                {tasks.map((task, index) => (
                   <div
                     className={styles.tasks}
                     style={{
@@ -159,11 +154,14 @@ function AddCards(props: AddCardsProps) {
                     <div className={styles.hcor}></div>
                     <div className={styles.texto}>
                       <div className={styles.tarefas}>
-                      <div >                      
-                      <p >{task.conteudo}</p>
-                        <button className={styles.botao} 
-                        onClick={() => tarefaDelete(index)
-                        }>Delete</button>
+                        <div>
+                          <p>{task.conteudo}</p>
+                          <button
+                            className={styles.botao}
+                            onClick={() => tarefaDelete(index)}
+                          >
+                            Delete
+                          </button>
                         </div>
                       </div>
                     </div>
