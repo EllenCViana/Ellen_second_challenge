@@ -11,6 +11,9 @@ function App() {
   let controle: any;
 
   const navigate = useNavigate();
+  function navegar_login() {
+    navigate("/home");
+  }
   const onsubmitlogin = (e: any) => {
     e.preventDefault();
     nome_email_login = e.target.elements.nome_email_login.value;
@@ -19,9 +22,7 @@ function App() {
     nome_email_login = nome_email_login.replace("_", "");
     controle_nome_password = `${nome_email_login}_${login_password}`;
 
-    function navegar_login() {
-      navigate("/home");
-    }
+    
 
     // Adicionando validação nos inputs
     const regexUsername = /^[a-zA-Z]+$/;
@@ -41,6 +42,9 @@ function App() {
     }
   };
 
+const mudarhome = ()=>{
+  navegar_login()
+}
   return (
     <main className="pag01">
       <section className="lado_1_01">
@@ -85,7 +89,7 @@ function App() {
             </label>
           </div>
 
-          <button id="login_01">Log in</button>
+          <button onClick={mudarhome} id="login_01">Log in</button>
           <a href="/cadastro" id="createaccount_01">
             Don't have an account yet?
           </a>
